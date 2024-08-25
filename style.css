@@ -1,0 +1,114 @@
+/* Reset margin dan padding default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya umum untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gaya untuk header */
+header {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    backdrop-filter: blur(10px);
+}
+.ul-navbar{   
+    display: flex; 
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+  } 
+  .li-navbar{ 
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    color:white
+    font-size 30px;
+  }
+  .li-navbar:hover {
+  background-color: rgba(247, 3, 3, 0.648);
+  transition: .5s ease-in-out ;
+  transition-delay: .3s;
+  border-radius: 8px;
+  }
+  .a-navbar{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+  }
+
+/* Gaya untuk hero section */
+#hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    animation: fadeIn 3s ease-in-out;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #f06, #f79);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    animation: slideUp 4s ease-in-out;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Animasi untuk h2 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi untuk p */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.margin-gambar{
+    width: 10%;
+    height: 10%;
+}
+/* Gaya untuk footer */
+footer {
+    background: rgba(249, 249, 249, 0.2);
+    color: #fcfcfc;
+    text-align: center;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+}
